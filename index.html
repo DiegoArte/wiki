@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Wiki Scrum Distribuido</title>
+</head>
+<body>
+  <header>
+    <h1>Wiki para Scrum Distribuido</h1>
+    <p>Gestión de artefactos y colaboración entre equipos</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Subir Artefacto Scrum</h2>
+      <form id="uploadForm">
+        <label for="equipo">Equipo:</label>
+        <input type="text" id="equipo" name="equipo" required>
+
+        <label for="sprint">Sprint:</label>
+        <input type="text" id="sprint" name="sprint" required>
+
+        <label for="tipo">Tipo de artefacto:</label>
+        <select id="tipo" name="tipo">
+          <option value="Product Backlog">Product Backlog</option>
+          <option value="Sprint Backlog">Sprint Backlog</option>
+          <option value="Increment">Increment</option>
+          <option value="Retrospective">Retrospective</option>
+          <option value="Definition of Done">Definition of Done</option>
+          <option value="Demo Video">Demo Video</option>
+        </select>
+
+        <label for="archivo">Selecciona archivo:</label>
+        <input type="file" id="archivo" name="archivo" required>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+
+        <button type="submit">Subir Artefacto</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Artefactos Subidos </h2>
+      <ul id="listaArchivos">
+        <!-- Aquí se listarán los archivos subidos (simulación en frontend) -->
+      </ul>
+    </section>
+  </main>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
