@@ -20,10 +20,11 @@
         <input type="text" id="equipo" name="equipo" required>
 
         <label for="sprint">Sprint:</label>
-        <input type="text" id="sprint" name="sprint" required>
+        <input type="number" id="sprint" name="sprint" required>
 
         <label for="tipo">Tipo de artefacto:</label>
         <select id="tipo" name="tipo">
+          <option value="" hidden selected>Selecciona un artefacto de Scrum</option>
           <option value="Product Backlog">Product Backlog</option>
           <option value="Sprint Backlog">Sprint Backlog</option>
           <option value="Increment">Increment</option>
@@ -38,16 +39,19 @@
         <label for="comentarios">Comentarios:</label>
         <textarea id="comentarios" name="comentarios" rows="3"></textarea>
 
-        <button type="submit">Subir Artefacto</button>
+        <button type="submit">Registrar</button>
       </form>
     </section>
 
+    <!--
     <section>
-      <h2>Artefactos Subidos </h2>
-      <ul id="listaArchivos">
-        <!-- Aquí se listarán los archivos subidos (simulación en frontend) -->
-      </ul>
+      <h2>Artefactos Subidos</h2>
+      <div id="registrosContainer" style="overflow-y: auto; max-height: 80vh;">
+        -->
+        <!-- Aquí se agregarán los registros dinámicamente 
+      </div>
     </section>
+    -->
   </main>
 
 
