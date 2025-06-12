@@ -11,7 +11,12 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
       const li = document.createElement('li');
       li.classList.add('archivo-item');
       const url = URL.createObjectURL(archivo);
-      li.innerHTML = `<strong>${tipo}</strong> – <a href="${url}" target="_blank" class="archivo-enlace">${archivo.name}</a> <br>Sprint: ${sprint}, Equipo: ${equipo}<br><em>${comentarios}</em>`;
+      li.innerHTML = `<div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+                        <strong>${tipo}</strong> – <a href="${url}" target="_blank" class="archivo-enlace">${archivo.name}</a>
+                        <br>Equipo: ${equipo}
+                        <br>Sprint: ${sprint} 
+                        <br><em>${comentarios}</em>
+                      </div>`;
       lista.appendChild(li);
 
       this.reset();
