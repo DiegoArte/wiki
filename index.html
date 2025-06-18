@@ -1,57 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Wiki Scrum Distribuido</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scrum Distribuido - Wiki</title>
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
+
   <header>
-    <h1>Wiki para Scrum Distribuido</h1>
-    <p>Gestión de artefactos y colaboración entre equipos</p>
+    <h1>Scrum Distribuido - Equipo de Redes</h1>
+    <h3>Documentación para proyectos de desarrollo</h3>
   </header>
 
   <main>
-    <section>
-      <h2>Subir Artefacto Scrum</h2>
-      <form id="uploadForm">
-        <label for="equipo">Equipo:</label>
-        <input type="text" id="equipo" name="equipo" required>
-
-        <label for="sprint">Sprint:</label>
-        <input type="number" id="sprint" name="sprint" required>
-
-        <label for="tipo">Tipo de artefacto:</label>
-        <select id="tipo" name="tipo">
-          <option value="" hidden selected>Selecciona un artefacto Scrum</option>
-          <option value="Product Backlog">Product Backlog</option>
-          <option value="Sprint Backlog">Sprint Backlog</option>
-          <option value="Increment">Increment</option>
-          <option value="Retrospective">Retrospective</option>
-          <option value="Definition of Done">Definition of Done</option>
-          <option value="Demo Video">Demo Video</option>
-        </select>
-
-        <label for="archivo">Selecciona archivo:</label>
-        <input type="file" id="archivo" name="archivo" required>
-
-        <label for="comentarios">Comentarios:</label>
-        <textarea id="comentarios" name="comentarios" rows="3"></textarea>
-
-        <button type="submit">Guardar</button>
-      </form>
-    </section>
-
-    <section>
-      <h2>Artefactos Subidos </h2>
-      <ul id="listaArchivos">
-        <!-- Aquí se listarán los archivos subidos (simulación en frontend) -->
+    <details>
+      <summary>1. Planeación</summary>
+      <p>Contiene documentos fundamentales para la planificación del proyecto.</p>
+      <ul>
+        <li><a href="docs/1-planeacion/plan-proyecto.pdf">Plan de Proyecto</a> – Define objetivos, alcance, entregables y cronograma.</li>
+        <li><a href="docs/1-planeacion/plan-riesgos.pdf">Plan de Riesgos</a> – Identifica posibles riesgos y estrategias de mitigación.</li>
+        <li><a href="docs/1-planeacion/plan-sprint.pdf">Plan por Sprint</a> – Describe la organización del trabajo en ciclos ágiles.</li>
       </ul>
-    </section>
+    </details>
+
+    <details>
+      <summary>2. Especificación de Requisitos</summary>
+      <p>Define los requerimientos funcionales y contractuales del proyecto.</p>
+      <ul>
+        <li><a href="docs/2-requisitos/contrato.pdf">Contrato</a> – Acuerdo formal entre el cliente y el equipo.</li>
+        <li><a href="docs/2-requisitos/enunciado-trabajo.pdf">Enunciado de Trabajo</a> – Detalla el alcance y entregables acordados.</li>
+        <li><a href="docs/2-requisitos/historias-usuario.pdf">Historias de Usuario</a> – Requisitos escritos desde la perspectiva del usuario.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>3. Configuración del Software</summary>
+      <p>Incluye la arquitectura y diseño técnico del sistema.</p>
+      <ul>
+        <li><a href="docs/3-configuracion/diseno-software.pdf">Diseño de Software</a> – Diagramas y especificaciones de componentes técnicos.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>4. Pruebas</summary>
+      <p>Documentación de pruebas realizadas para asegurar la calidad del sistema.</p>
+      <ul>
+        <li><a href="docs/4-pruebas/casos-prueba.pdf">Casos de Prueba</a> – Escenarios diseñados para validar funcionalidades.</li>
+        <li><a href="docs/4-pruebas/pruebas-aceptacion.pdf">Pruebas de Aceptación</a> – Validación final por parte del cliente.</li>
+        <li><a href="docs/4-pruebas/pruebas-unitarias.pdf">Pruebas Unitarias</a> – Validación de componentes individuales.</li>
+        <li><a href="docs/4-pruebas/reporte-pruebas.pdf">Reporte de Pruebas</a> – Resultados y análisis de pruebas realizadas.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>5. Seguimiento</summary>
+      <p>Incluye el monitoreo del progreso y control del proyecto.</p>
+      <ul>
+        <li><a href="docs/5-seguimiento/acciones-correctivas.pdf">Acciones Correctivas</a> – Medidas tomadas frente a desviaciones.</li>
+        <li><a href="docs/5-seguimiento/minutas.pdf">Minutas</a> – Resúmenes de reuniones y acuerdos.</li>
+        <li><a href="docs/5-seguimiento/trazabilidad.pdf">Registro de Trazabilidad</a> – Relación entre requerimientos y entregables.</li>
+        <li><a href="docs/5-seguimiento/avance.pdf">Reporte de Avance</a> – Progreso del proyecto en cada fase.</li>
+        <li><a href="docs/5-seguimiento/solicitudes-cambio.pdf">Solicitudes de Cambio</a> – Peticiones formales de modificación.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>6. Manuales</summary>
+      <p>Documentos de apoyo para la operación, uso y mantenimiento del sistema.</p>
+      <ul>
+        <li><a href="docs/6-manuales/manual-mantenimiento.pdf">Manual de Mantenimiento</a> – Instrucciones para conservar el sistema en funcionamiento.</li>
+        <li><a href="docs/6-manuales/manual-operacion.pdf">Manual de Operación</a> – Guía para la correcta administración del sistema.</li>
+        <li><a href="docs/6-manuales/manual-usuario.pdf">Manual de Usuario</a> – Indicaciones para usuarios finales.</li>
+      </ul>
+    </details>
   </main>
 
-
-  <script src="js/script.js"></script>
 </body>
 </html>
